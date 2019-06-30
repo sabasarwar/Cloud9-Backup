@@ -1,0 +1,15 @@
+<!-- include header template -->
+<% include partials/header %>
+
+<h1>The post page</h1>
+
+
+<% for(var i=0 ; i<postsVar.length ; i++ ) { %>
+    <li>
+        <%= postsVar[i].title %> - <strong><%= postsVar[i].author %></strong>
+    </li>
+    
+<% } %>
+
+<!-- include footer template -->
+<% include partials/footer %>
